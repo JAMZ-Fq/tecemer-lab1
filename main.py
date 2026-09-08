@@ -1,7 +1,9 @@
 import requests
+
 try:
     respuesta = requests.get(
-    "https://official-joke-api.appspot.com/random_joke", timeout=5)
+        "https://official-joke-api.appspot.com/random_joke", timeout=5
+    )
     respuesta.raise_for_status()
     datos = respuesta.json()
     print(datos["setup"])
