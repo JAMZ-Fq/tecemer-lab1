@@ -1,17 +1,32 @@
 # tecemer-lab1
 
-Laboratorio N.º 1 - Fundamentos y Entornos de Desarrollo en Python.
-
-## Descripción
-Este repositorio contiene la solución del Laboratorio N.º 1 del curso Tecnologías Emergentes. El proyecto implementa una estructura estándar modular (`src layout`), gestión aislada de dependencias con entornos virtuales, configuración de empaquetado editable mediante `pyproject.toml`, cumplimiento del estándar de estilo PEP 8 y control de versiones con Git siguiendo la convención de Conventional Commits.
-
-## Requisitos Previos
-- **Python:** 3.10 o superior (`python --version`)
-- **Git:** Instalado y configurado (`git version`)
+Proyecto de práctica de la Semana 1 del curso Tecnologías Emergentes (ISO46B) — UNCP.
+Consume una API pública de chistes como ejercicio de configuración de entorno.
 
 ## Instalación
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/JAMZ-Fq/tecemer-lab1.git](https://github.com/JAMZ-Fq/tecemer-lab1.git)
-   cd tecemer-lab1
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -e .
+```
+
+## Uso
+
+```bash
+python -m tecemer_lab1.app
+```
+
+## Estructura del repositorio
+
+```
+tecemer-lab1/
+├── src/tecemer_lab1/   # código fuente
+├── pyproject.toml      # metadatos y dependencias
+├── README.md
+└── .gitignore
+```
+
+## Autor
+
+Curso: Tecnologías Emergentes (ISO46B) — Facultad de Ingeniería de Sistemas, UNCP.
